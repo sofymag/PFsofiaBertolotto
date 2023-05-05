@@ -1,0 +1,222 @@
+/*GENERAL*/
+ul{list-style-type: none;}
+li{padding: 20px;margin: 20px;}
+.p20{padding: 20px;}
+.mb20{margin-bottom: 20px;}
+.m20{margin: 20px;}
+.bgPrincipal{background-color:grey;}
+.colo{margin-bottom:25px;margin-top: 20px;}
+
+*{padding: 0;margin: 0;}
+div h1{text-align: center;}
+*{padding: 0;margin: 0;font-family: Verdana, Geneva, Tahoma, sans-serif ;}
+/*CONTACTO*/
+ header, footer, ul {display: flex;flex-direction: row;}
+ footer,header{color: rgb(255, 255, 255);}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*SUCURSALES*/
+.ubi{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    
+}
+/*SERVICIOS*/
+.gridContacto{
+    display: grid;
+    grid-template-areas:
+    "tituloContacto tituloContacto"
+    "form datosContacto";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+/*SUCURSALES*/
+.colo{
+    color: black;background-color: burlywood;
+    
+}
+.medio{
+    display:grid;
+    justify-content:center;
+}
+/*FOOTER*/
+
+body{
+    margin: 0;    
+}
+
+.social{
+    text-align: center;
+    padding-bottom: 24px;
+    color: #000;
+}
+.social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 50px;
+    height: 50px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius:50% ;
+    margin: 0 8px;
+    opacity: 0.75;
+    margin-top: 20px;
+}
+/*INDEX*/
+.imgParrafo.p20{
+    padding-right: 25px;
+}
+.imgParrafo.p20{
+    width: 200px;
+}
+/*DESKTOP*/
+@media (min-width:1024px){
+    .grid{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    header{grid-area: header;}
+    main{grid-area: main;}
+    footer{grid-area: footer;}
+
+    .gridMain{
+        display: grid;
+        grid-template-areas: 
+        "imgPrincipal imgPrincipal imgPrincipal"
+        "encabezado encabezado encabezado"
+        "parrafoIzq imgParrafo parrafoDer";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 33% 34% 33%;
+    }
+    .imgPrincipal{grid-area: imgPrincipal;}
+    .encabezado{grid-area: encabezado;}
+    .parrafoIzq{grid-area: parrafoIzq;}
+    .imgParrafo{grid-area: imgParrafo;}
+    .parrafoDer{grid-area: parrafoDer;}
+     /* ---------- GRID INDEX */
+     .gridServicios{
+        display: grid;
+        grid-template-areas:
+        "encServicios encServicios encServicios encServicios"
+        "card1 card2 card3 card4";
+        grid-template-columns: 25%  25%  25%  25%;
+        grid-template-rows: auto auto;
+    }
+    .encabezadoServicios{grid-template-columns: encServicios;}
+    .card1{grid-area: card1;}
+    .card2{grid-area: card2;}
+    .card3{grid-area: card3;}
+    .card4{grid-area: card4;}
+    /* ---------- GRID SERVICIOS */
+    header, footer, ul {display: flex;flex-direction: row;}
+    .JCSpaceBetween{justify-content: space-between;}
+    /* ---------- FLEX */
+    a{font-size: 22px;color: black;}
+    h1{font-size: 30px;}
+    p{font-size: 20px;}
+}
+/*GENERAL*/
+ul{list-style-type: none;}
+a{text-decoration: none;}
+li{padding: 20px;margin: 20px;}
+.img-fluid{width: 100%;height: auto;}
+.p20{padding: 20px;}
+.mb20{margin-bottom: 20px;}
+.m20{margin: 20px;}
+.flexCard{display:flex;flex-direction: column;}
+.Card{border-radius: 20px; align-items: center;}
+input{width: 100%;}
+div h1{text-align: center;}
+*{padding: 0;margin: 0;}
+
+  /* ---------- GRID INDEX */
+  .gridServicios{
+    display: grid;
+    grid-template-areas:
+    "encServicios encServicios encServicios encServicios"
+    "card1 card2 card3 card4";
+    grid-template-columns: 25%  25%  25%  25%;
+    grid-template-rows: auto auto;
+}
+.encabezadoServicios{grid-template-columns: encServicios;}
+.card1{grid-area: card1;}
+.card2{grid-area: card2;}
+.card3{grid-area: card3;}
+.card4{grid-area: card4;}
+
+/*MOBILE*/
+@media  (max-width: 768px) {
+    ul{display: flex;flex-direction: row;justify-content: center;padding-left: 0;}
+    li{padding: 2px;margin: 2px;}
+    main, footer, header{display: flex;flex-direction: column;align-items: center;}
+    .desaparecer{display: none;}
+    .gridServicios{display: flex;flex-direction: column;}
+    h1{font-size: 30px;}
+    p{font-size: 18px;}
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.video-grid video{
+    width: 100%;
+    height: auto;
+    grid-column: 1 / 2;
+}
+@media screen and (max-width:768px) {
+    .video-grid{
+        grid-template-columns: 1fr;
+    }
+}
+/*GUTTERS*/
+.no-gutters{
+    margin-right: 0;
+}
+/*IMG LUCI CONTACTO*/
+ 
+.luci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+/*CONTACTO*/
+form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-center{
+    padding-top: 30px;
+}
+
+label{
+    display: inline-block;
+    width: 150px;
+}
+
+input[type="text"],
+input[type="email"];
+ 
+
+
+
+
+
